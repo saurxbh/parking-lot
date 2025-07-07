@@ -1,5 +1,6 @@
 package dev.saurabh.parkinglot.entity;
 
+import dev.saurabh.parkinglot.enums.Status;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

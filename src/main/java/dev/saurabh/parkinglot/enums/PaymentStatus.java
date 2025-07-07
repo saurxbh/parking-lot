@@ -1,4 +1,4 @@
-package dev.saurabh.parkinglot.entity;
+package dev.saurabh.parkinglot.enums;
 
 public enum PaymentStatus {
     SUCCESS,
