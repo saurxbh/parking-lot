@@ -2,11 +2,13 @@ package dev.saurabh.parkinglot.entity;
 
 import dev.saurabh.parkinglot.enums.VehicleType;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 public class Vehicle {
 
