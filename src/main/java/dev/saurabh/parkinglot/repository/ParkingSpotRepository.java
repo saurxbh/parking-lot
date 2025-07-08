@@ -5,8 +5,8 @@ import dev.saurabh.parkinglot.enums.Status;
 import dev.saurabh.parkinglot.enums.VehicleType;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
+import java.util.Optional;
 
 public interface ParkingSpotRepository extends JpaRepository<ParkingSpot, Long> {
-    List<ParkingSpot> findByStatusAndVehicleType(Status status, VehicleType vehicleType);
+    Optional<ParkingSpot> findFirstByVehicleTypeAndStatus(VehicleType vehicleType, Status status);
 }
