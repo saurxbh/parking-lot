@@ -29,6 +29,8 @@ public class Ticket {
 
     private LocalDateTime entryTime;
 
+    private LocalDateTime exitTime;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "entry_gate_id")
     private Gate entryGate;
