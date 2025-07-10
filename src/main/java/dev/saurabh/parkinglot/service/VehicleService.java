@@ -5,4 +5,5 @@ import dev.saurabh.parkinglot.enums.VehicleType;
 
 public interface VehicleService {
     Vehicle getOrCreateVehicle(String vehicleNo, VehicleType vehicleType);
+    Vehicle registerVehicle(Vehicle vehicle);
 }
